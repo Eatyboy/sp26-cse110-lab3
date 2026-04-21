@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://eatyboy.github.io/CSE110_Lab2_Starter/
+# Lab 3
+https://eatyboy.github.io/sp26-cse110-lab3/
