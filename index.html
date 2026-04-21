@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Meeting Minutes</title>
+  </head>
+  <body>
+    <nav>
+      <h3><i>Other Meetings</i></h3>
+
+      <span><a href="">Meeting 1</a></span>
+      <span><a href="">Meeting 2</a></span>
+      <span><a href="">Meeting 3</a></span>
+
+      <hr>
+    </nav>
+
+    <header>
+      <h1>Team Inc. Meeting Minutes</h1>
+      <h3>4/26/2026 2:00 PM</h3>
+    </header>
+
+    <main>
+      <img width="200" src=company_photo.jpg>
+      <section>
+        <details>
+          <summary><b>Attendance</b></summary>
+          <ul>
+            <li>Alice</li>
+            <li>Bob</li>
+            <li>Charlie</li>
+          </ul>
+        </details>
+      </section>
+      
+      <section>
+        <h2>Agenda</h2>
+
+        <ol>
+          <li>Thing to do</li>
+          <li>Other thing to do</li>
+          <li>Thing to address</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Meeting Notes</h2>
+
+        <ul>
+          <li>Reviewed progress on current projects; most teams are on track with minor delays in QA due to resource constraints.</li>
+          <li>Discussed upcoming product release timeline and agreed to shift the launch by one week to allow for additional testing.</li>
+          <li>Finance shared a brief update on budget performance—spending remains within projections.</li>
+          <li>
+            Marketing created sample media for the campaign and will present a detailed plan next meeting.
+            <br>
+            <video controls width="200">
+              <source src="welcome_video.mp4" type="video/mp4">
+            </video>
+            <br>
+            <audio controls src="corporate_jingle.mp3">
+            </audio>
+          </li>
+          <li>Action items assigned for follow-ups on client feedback and internal tooling improvements.</li>
+        </ul>
+        <b>Next Steps</b>:
+        <ul>
+          <li>Finalize QA testing schedule</li>
+          <li>Prepare marketing proposal</li>
+          <li>Provide status updates on outstanding action items before next meeting</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Summary</h2>
+        <!--I generated this with ChatGPT-->
+        <p>
+          During the weekly team sync, the group reviewed progress across current projects, noting that most teams are <strong>on track</strong> with only <em>minor</em> delays in QA due to limited resources. The team discussed the upcoming product release and agreed to push the launch back by <strong>one week</strong> to allow for additional testing. Finance provided a brief update indicating that spending remains within budget projections, while Marketing shared early campaign ideas and will present a more detailed plan at the next meeting. The meeting concluded with action items focused on addressing client feedback, improving internal tools, and ensuring timely status updates ahead of the next sync.
+        </p>
+
+      </section>
+
+      <section>
+        <h2>Survey</h2>
+        <form>
+          <div>
+            <label for="topic">Next meeting topic</label>
+            <input list="topic" id="topic" name="topic">
+            <datalist id="topic">
+              <option value="New Widgets"></option>
+              <option value="Budget Concerns"></option>
+              <option value="Team Bonding Activity"></option>
+              <option value="Raises"></option>
+            </datalist>
+            <br>
+
+            <fieldset>
+              <legend>Next meeting time</legend>
+
+              <input type="checkbox" id="1" name="meeting_time" value="5-1-13:00">
+              <label for="1">5/1 1:00 PM</label>
+              <br>
+
+              <input type="checkbox" id="2" name="meeting_time" value="5-2-12:00">
+              <label for="2">5/2 12:00 PM</label>
+              <br>
+
+              <input type="checkbox" id="3" name="meeting_time" value="5-4-2:00">
+              <label for="3">5/4 2:00 PM</label>
+            </fieldset>
+            <br>
+
+            <fieldset>
+              <legend>Favorite ice cream flavor</legend>
+
+              <input type="radio" id="vanilla" name="ice_cream" value="vanilla">
+              <label for="vanilla">Vanilla</label>
+              <br>
+
+              <input type="radio" id="chocolate" name="ice_cream" value="chocolate">
+              <label for="chocolate">Chocolate</label>
+              <br>
+
+              <input type="radio" id="strawberry" name="ice_cream" value="strawberry">
+              <label for="strawberry">Strawberry</label>
+            </fieldset>
+            <br>
+
+            <label>Leadership feedback</label>
+            <br>
+            <textarea rows="4" cols="30" placeholder="Give us some feedback!"></textarea>
+            <br>
+
+            <label for="birthday">When is your birthday?</label>
+            <input type="date" id="birthday">
+
+            <br>
+            <label for="anything_else">Anything else?</label>
+            <input type="text" id="anything_else">
+
+            <br>
+            <button>Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      Copyright (c) 2026 Team Inc. All Rights Reserved.
+    </footer>
+  </body>
+</html>
