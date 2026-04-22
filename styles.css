@@ -1,0 +1,281 @@
+/* I got this font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+:root {
+  --main-blue: #3572b0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--main-blue, #444);
+  background-color: #eaeaea;
+  font-size: 16px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #2b2b2b;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  h3 {
+    color: white;
+    margin-bottom: 0.5em;
+  }
+
+  a {
+    color: color-mix(in srgb, white 75%, orange);
+    text-decoration: none;
+    margin-right: 5mm;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid gray;
+    margin-top: 8px;
+  }
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+span.nav-link {
+  display: inline-block;
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-width: 2px;
+}
+
+header h1 {
+  color: #2b2b2b;
+  font-size: 2rem;
+}
+
+header h1 + h2 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: hsl(0, 0%, 45%);
+}
+
+main {
+  max-width: 780px;
+  min-width: 280px;
+  margin: auto;
+  padding: 20px;
+}
+
+.team-photo {
+  display: block;
+  margin: auto;
+  border: 3px solid #bbb;
+  border-radius: 5px;
+  width: 220px;
+  height: auto;
+}
+
+details {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 15px 0;
+  padding: 10px 15px;
+}
+
+section {
+  background-color: white;
+  margin: 20px 0 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+section h2 {
+  color: var(--main-blue);
+  border-bottom-style: solid;
+  border-bottom-color: color(srgb 0.2 0.45 0.7 / 0.25);
+  border-bottom-width: 2px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+section > ol,
+section > ul {
+  margin-left: 25px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 0;
+}
+
+ol li, ul li {
+  margin-bottom: 5px;
+}
+
+#agenda-section {
+  background-color: color(srgb 0.95 0.97 1);
+}
+
+section ~ section {
+  border-top-style: dashed;
+  border-top-color: #ddd;
+  border-top-width: 1px;
+}
+
+video, audio {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.summary-text {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[list] {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 350px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin: 10px 0;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 5px 0 5px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+}
+
+button {
+  background-color: var(--main-blue);
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #285a8e;
+}
+
+button:active {
+  background-color: #1e4a75;
+}
+
+fieldset:has(input:checked) {
+  border-color: var(--main-blue);
+  background-color: color-mix(in srgb, var(--main-blue) 5%, white);
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px 20px 10px;
+  color: gray;
+  font-size: 0.85rem;
+  position: relative;
+
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .team-photo {
+    width: 180px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+  header {
+    padding: 15px 8px;
+  }
+  header h1 {
+    font-size: 1.2rem;
+  }
+  section {
+    padding: 10px;
+    margin: 12px 0;
+  }
+  .team-photo {
+    width: 150px;
+  }
+  textarea {
+    max-width: 100%;
+  }
+}
