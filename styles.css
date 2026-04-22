@@ -28,23 +28,23 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+}
 
-  h3 {
-    color: white;
-    margin-bottom: 0.5em;
-  }
+nav h3 {
+  color: white;
+  margin-bottom: 0.5em;
+}
 
-  a {
-    color: color-mix(in srgb, white 75%, orange);
-    text-decoration: none;
-    margin-right: 5mm;
-  }
+nav a {
+  color: color-mix(in srgb, white 75%, orange);
+  text-decoration: none;
+  margin-right: 5mm;
+}
 
-  hr {
-    border: none;
-    border-top: 1px solid gray;
-    margin-top: 8px;
-  }
+nav hr {
+  border: none;
+  border-top: 1px solid gray;
+  margin-top: 8px;
 }
 
 nav a:hover {
@@ -100,12 +100,17 @@ main {
   height: auto;
 }
 
+/* nested selectors */
 details {
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 4px;
   margin: 15px 0;
   padding: 10px 15px;
+
+  summary {
+    cursor: pointer;
+  }
 }
 
 section {
@@ -119,7 +124,7 @@ section {
 section h2 {
   color: var(--main-blue);
   border-bottom-style: solid;
-  border-bottom-color: color(srgb 0.2 0.45 0.7 / 0.25);
+  border-bottom-color: rgba(51, 115, 179, 0.25);
   border-bottom-width: 2px;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -138,6 +143,8 @@ ol li, ul li {
 }
 
 #agenda-section {
+  /* wider-gamut color with fallback */
+  background-color: #f2f7ff;
   background-color: color(srgb 0.95 0.97 1);
 }
 
@@ -234,12 +241,12 @@ footer {
   color: gray;
   font-size: 0.85rem;
   position: relative;
+}
 
-  hr {
-    border: none;
-    border-top: 1px solid #ccc;
-    margin-bottom: 10px;
-  }
+footer hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
