@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
     <title>Meeting Minutes</title>
   </head>
   <body>
     <nav>
       <h3><i>Other Meetings</i></h3>
 
-      <span><a href="">Meeting 1</a></span>
-      <span><a href="">Meeting 2</a></span>
-      <span><a href="">Meeting 3</a></span>
+      <div class="nav-links">
+        <span class="nav-link"><a href="">Meeting 1</a></span>
+        <span class="nav-link"><a href="">Meeting 2</a></span>
+        <span class="nav-link"><a href="">Meeting 3</a></span>
+      </div>
 
       <hr>
     </nav>
@@ -23,7 +26,7 @@
     </header>
 
     <main>
-      <img width="200" src="company_photo.jpg" alt="Team Photo">
+      <img class="team-photo" src="company_photo.jpg" alt="Team Photo">
       <details>
         <summary><b>Attendance</b></summary>
         <ul>
@@ -33,7 +36,7 @@
         </ul>
       </details>
       
-      <section>
+      <section id="agenda-section">
         <h2>Agenda</h2>
 
         <ol>
@@ -73,7 +76,7 @@
       <section>
         <h2>Summary</h2>
         <!--I generated this with ChatGPT-->
-        <p>
+        <p class="summary-text">
           During the weekly team sync, the group reviewed progress across current projects, noting that most teams are <strong>on track</strong> with only <em>minor</em> delays in QA due to limited resources. The team discussed the upcoming product release and agreed to push the launch back by <strong>one week</strong> to allow for additional testing. Finance provided a brief update indicating that spending remains within budget projections, while Marketing shared early campaign ideas and will present a more detailed plan at the next meeting. The meeting concluded with action items focused on addressing client feedback, improving internal tools, and ensuring timely status updates ahead of the next sync.
         </p>
 
@@ -82,7 +85,7 @@
       <section>
         <h2>Survey</h2>
         <form>
-          <div>
+          <div class="form-grid">
             <label for="topic">Next meeting topic</label>
             <input list="topic-list" id="topic" name="topic">
             <datalist id="topic-list">
