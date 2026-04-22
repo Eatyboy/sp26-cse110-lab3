@@ -100,7 +100,6 @@ main {
   height: auto;
 }
 
-/* nested selectors */
 details {
   background-color: white;
   border: 1px solid #ddd;
@@ -109,7 +108,7 @@ details {
   padding: 10px 15px;
 
   summary {
-    cursor: pointer;
+    font-size: 18px;
   }
 }
 
@@ -143,9 +142,7 @@ ol li, ul li {
 }
 
 #agenda-section {
-  /* wider-gamut color with fallback */
   background-color: #f2f7ff;
-  background-color: color(srgb 0.95 0.97 1);
 }
 
 section ~ section {
